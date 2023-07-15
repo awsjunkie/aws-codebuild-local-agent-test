@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo AWS CodeBuild started locally on `date`
+      - echo Strting Maven Build for a dummy Java SpringBoot project
+      - mvn install
+artifacts:
+  files:
+    - target/aws-local-codebuild-1.0.jar
